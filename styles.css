@@ -24,7 +24,8 @@ header h1 img {
 }
 
 .featured-image {
-
+    transform: translate(-0%, -400%);
+    color: #FFF;
 }
 
 .card {
@@ -32,5 +33,4 @@ header h1 img {
     padding: 20px;
     margin: 30px;
     text-align: center;
-    /* Add more custom styles as needed */
 }
