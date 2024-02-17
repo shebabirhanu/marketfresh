@@ -1,0 +1,36 @@
+header h1 {
+    color: #CBF265;
+    text-align: center; 
+    font-size: 20px;
+}
+
+header {
+    width: 100%;
+    font-size: 20px;
+    background-color: #F3F3F3;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+.title-text {
+    font-size: 25px;
+    text-align: center;
+}
+
+header h1 img {
+    width: 50px; 
+    height: auto; 
+    padding: 0;
+}
+
+.featured-image {
+    transform: translate(-0%, -400%);
+    color: #FFF;
+}
+
+.card {
+    width: 100px;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+}
