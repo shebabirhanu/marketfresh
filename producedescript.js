@@ -30,7 +30,10 @@ const ontarioProduce = [
     {
     	name: 'Carrots',
     	description: 'Carrots are a versatile and nutritious vegetable, enjoyed for their sweet flavor. Packed with vitamins and minerals like A, K, and potassium, they can be eaten raw or cooked in various dishes. Carrots are also used in juicing and smoothies for natural sweetness. With their health benefits and culinary versatility, they\'re a must-have in any kitchen.'
-    }
+    },
+    {
+        name: 'Romaine Lettuce',
+        description: 'Romaine lettuce is a versatile and nutritious leafy green vegetable that is commonly used in salads, sandwiches, and wraps. It is known for its crisp texture and slightly bitter flavor, making it a popular choice for those looking to add some freshness to their meals. It can be used as a base for a salad or as a crunchy topping for a burger.'
     // Add more produce items and descriptions as needed
 ];
 
