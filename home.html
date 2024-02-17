@@ -4,54 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Market Fresh</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>
-            <span><img src="logo.png" alt="Market Fresh Logo" width="30" height="30" class="navbar-logo"></span>
-            Market Fresh
-        </h1>
+    <header class="bg-light p-3">
+        <div class="container">
+            <h1 class="navbar-brand mb-0">
+                <img src="logo.png" alt="Market Fresh Logo" width="30" height="30" class="mr-2">
+                Market Fresh
+            </h1>
+        </div>
     </header>
 
 
-    <main>
-        <section>
-            <!--Find Location-->
-            <p>Location</p>
-        </section>
+    <main class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <!--Find Location-->
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" class="form-control" id="location" placeholder="Enter your location">
+                    </div>
+                </div>
+            </div>
 
-        <section>
-            <!--Search Bar-->
-                <p>Search</p>
-        </section>
+            <div class="row">
+                <div class="col-md-6">
+                    <!--Search Bar-->
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="search-item" placeholder="Search item...">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary" type="button">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        <section>
-            <!--Trending recipes-->
-            <p>Trending recipes</p>
-        </section>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <!--Trending recipes-->
+                    <img src="trendingrecipe.png" alt="Trending Recipe" class="img-fluid">
+                </div>
+            </div>
 
-        <section>
-            <!--Local farmers-->
-            <p>Local farmers market</p>
-        </section>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <!--Local farmers-->
+                    <img src="farmersmarket.png" alt="Farmer's Market" class="img-fluid">
+                </div>
+            </div>
 
-        <!-- IN SEASON PRODUCE -->
-        <section>
-            <h1>PRODUCE IN SEASON</h1>
-            <section>
-                <!-- Produce item -->
-                <p>Gala Apples</p>
-            </section>
-        </section>
-       
+            <!-- IN SEASON PRODUCE -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h2>PRODUCE IN SEASON</h2>
+                    <ul class="list-unstyled">
+                        <li>Gala Apples</li>
+                        <!-- Add more produce items as needed -->
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <footer>
-    <!--navigation-->
-        <p>&copy; 2024 Market Fresh</p>
+    <footer class="bg-light py-3 mt-4">
+        <div class="container">
+            <p>&copy; 2024 Market Fresh</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Your custom JavaScript file -->
     <script src="App.js"></script>
 </body>
 </html>
