@@ -5,6 +5,10 @@ header h1 {
     padding: 20px 0; /* Added padding to adjust the height */
 }
 
+main {
+    margin: 20px;
+}
+
 header {
     width: 100%;
     font-size: 20px;
