@@ -1,0 +1,72 @@
+nav {
+    color: rgb(9, 112, 0);
+    text-align: center; 
+    font-size: 20px;
+    width: 100%;
+    border-bottom-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+main {
+    margin: 20px;
+}
+
+header {
+    width: 100%;
+    font-size: 20px;
+    background-color: #F3F3F3;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+.title-text {
+    font-size: 25px;
+    text-align: center;
+}
+
+header h1 img {
+    width: 50px; 
+    height: auto; 
+    padding: 0;
+}
+
+.featured-image {
+    transform: translate(-0%, -400%);
+    color: #FFF;
+}
+
+.card {
+    width: 100px;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+}
+
+.search-container {
+    padding-bottom: 20px;
+}
+
+.map
+{
+    display: inline-block;
+    width: 100%;
+}
+
+.container
+{
+    padding: revert;
+    margin: revert;
+}
+
+.navbar-brand {
+    color: rgb(9, 112, 0);
+}
+
+.navbar {
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.local-container {
+    padding-top: 20px;
+}
