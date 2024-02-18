@@ -8,10 +8,5 @@ const ontarioProduceInSeason = [
     { produce: 'Cherries', season: ['July', 'August'] },
     { produce: 'Sweet Corn', season: ['July', 'August', 'September'] },
     { produce: 'Tomatoes', season: ['July', 'August', 'September', 'October'] },
-    { produce: 'Green Grapes', season: ['August', 'September', 'October'] },
-    // Add more produce items and their seasons as needed
+    { produce: 'Green Grapes', season: ['August', 'September', 'October'] }
 ];
-
-// Example usage:
-console.log(ontarioProduceInSeason[0]); // Output: { produce: 'Gala Apples', season: ['June', 'July', 'August'] }
-console.log(ontarioProduceInSeason[1].season); // Output: ['June', 'July']
