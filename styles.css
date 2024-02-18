@@ -92,3 +92,8 @@ color: #1a0f5ab0;
 {
     background-color: #74747484;
 }
+
+.btn-like:active
+{
+    color: #1a0f5a;
+}
