@@ -8,6 +8,8 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 </head>
 
 <body>
@@ -26,8 +28,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <!--Find Location-->
-                    <div class="form-group">
-                        <label for="location">Location</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class='bx bx-current-location nav__icon'></i></span>
+                        </div>
                         <input type="text" class="form-control" id="location" placeholder="Enter your location">
                     </div>
                 </div>
@@ -48,16 +52,20 @@
             <div class="row mt-4">
                 <div class="col-md-6 text-center">
                     <!--Trending recipes-->
-                    <img src="images/trendingrecipe.png" alt="Trending Recipe">
-                    <h6 class="featured-image">Trending Recipes</h6>
+                    <div class="image-container">
+                        <img src="images/trendingrecipe.png" alt="Trending Recipe">
+                        <h6 class="image-text">Trending Recipes</h6>
+                    </div>
                 </div>
             </div>
 
             <div class="row mt-4">
                 <div class="col-md-6 text-center">
                     <!--Local farmers-->
-                    <img src="images/farmersmarket.png" alt="Farmer's Market">
-                    <h6 class="featured-image">Local Farmer's Markets</h6>
+                    <div class="image-container">
+                        <img src="images/farmersmarket.png" alt="Farmer's Markets">
+                        <h6 class="image-text">Local Farmer's Markets</h6>
+                    </div>
                 </div>
             </div>
 
@@ -67,28 +75,51 @@
                     <h2 class="title-text">In Season Produce</h2>
 
                     <section class="cards d-flex flex-wrap justify-content-center">
+                       
 
-                        <!-- Card 1 -->
-                        <div class="card" style="width: 18rem;">
-                            <img src="images/broccoli.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Broccoli</h5>
-                                </div>
+                            <!-- Card 1 -->
+                            <a href="product.html">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/broccoli.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Broccoli</h5>
+                                        <h6>June, July & August</h6>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class='bx bx-heart nav__icon'></i>
+                                        </a>
+                                    </div>
+                            </div>
+                            </a>
+                            <!-- Card 2 -->
+                            <a href="product.html">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/apple.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Gala Apples</h5>
+                                        <h6>June, July & August</h6>
+                                        <a href="#" class="btn btn-primary">
+                                            <i class='bx bx-heart nav__icon'></i>
+                                        </a>
+                                    </div>
+                            </div>
+                            </a>
                         </div>
-                        <!-- Card 2 -->
-                        <div class="card" style="width: 18rem;">
-                            <img src="images/apple.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Gala Apples</h5>
-                                </div>
-                        </div>
+
+                        
                         <!-- Card 3 -->
-                        <div class="card" style="width: 18rem;">
-                            <img src="images/grapes.png" class="card-img-top" alt="...">
+                        <a href="product.html">
+                            <div class="card" style="width: 18rem;">
+                                <img src="images/grapes.png" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Grapes</h5>
+                                    <h6>June, July & August</h6>
+                                    <a href="your-link-url" class="btn btn-primary">
+                                        <i class='bx bx-heart nav__icon'></i>
+                                    </a>
                                 </div>
-                        </div>
+                            </div>
+                        </a>
+
                     </section>
                 </div>
             </div>
