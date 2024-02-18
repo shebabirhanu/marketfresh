@@ -1,67 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market Fresh</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="local-styles.css">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="kelly-styles.css">
+    <style>
+  
+        .image-box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: Calibri, sans-serif;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; 
+        }
+
+        .image-box h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .image-box p {
+            margin-top: 10px;
+        }
+
+        /* Sticky footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0; 
+            right: 0; 
+            background-color: #ace18d;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px; 
+        }
+
+        footer a:hover {
+            color: lightgray;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="bg-light p-3">
-        <div class="container">
-            <h1 class="navbar-brand mb-0">
-                <img src="images/logo.png" alt="Market Fresh Logo" width="30" height="30" class="mr-2">
-                Market Fresh
-            </h1>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Market Fresh</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
+    </nav>
+
+    <header>
+        <h1>Favourites</h1>
     </header>
 
-    <main>
-        <section>
-            <h2>Favourites</h2>
-        </section>
+    <form action="/search" method="GET">
+        <input type="text" id="searchInput" name="query" placeholder="Search...">
+        <button type="submit">Search</button>
 
-        <div class="card" style="width: 18rem;">
-            <img src="images/grapes.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Grapes</h5>
-                </div>
+        <div id="filterButtons">
+            <button type="button" onclick="filterBy('main-dish')">Recipes</button>
+            <button type="button" onclick="filterBy('Produce')">Produce</button>
         </div>
+    </form>
 
-
-        <section>
+    <main id="recipeList">
+        <section class="main-dish">
             <div class="image-box">
-                <h3>Tropi-Cobb Grocers</h3>
-                <p>Delicious and hearty grocers.</p>
-                <p>123 Fake St.</p>
+                <img src="/Images/Alfredo.png" alt="Image description">
+                <h3>Alfredo</h3>
+                <p>Creamy sauce that perfectly coats tender pasta, creating a rich and satisfying flavor experience.</p>
             </div>
         </section>
-
-        <section>
+        <section class="main-dish">
             <div class="image-box">
-                <h3>Green Grocers</h3>
-                <p>Crunchy and fresh produce.</p>
-                <p>123 Fake St.</p>
+                <img src="/Images/Cakes.png" alt="Image description">
+                <h3>Quinoa Cakes</h3>
+                <p>Creamy sauce that perfectly coats tender pasta, creating a rich and satisfying flavor experience.</p>
             </div>
         </section>
-
-        <section>
+        <section class="Produce">
             <div class="image-box">
-                <h3>Corn Farmers</h3>
-                <p>Farm to table groceries for every day of the week.</p>
-                <p>123 Fake St.</p>
+                <img src="/Images/Beans.jpeg" alt="Image description">
+                <h3>Beans</h3>
+                <p>Delightful dish with unique flavors, perfect for any occasion.</p>
             </div>
         </section>
+        <!-- Additional sections for other recipes -->
     </main>
 
+    <!--
+    <footer>
+        <a href="#"><img src="/Images/home.png" alt="home"></a>
+        <a href="#"><img src="/Images/book.png" alt="Icon 2"></a>
+        <a href="#"><img src="/Images/heart.png" alt="Icon 3"></a>
+        <a href="#"><img src="Images/location.png" alt="Icon 4"></a>
+    </footer>
+    -->
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <!-- Your custom JavaScript file -->
+    <script>
+        function filterBy(category) {
+            // Show all recipes
+            var recipes = document.querySelectorAll('section');
+            recipes.forEach(function(recipe) {
+                recipe.style.display = 'none';
+            });
+
+            // Filter recipes based on category
+            if (category === 'Produce') {
+                var produceRecipes = document.querySelectorAll('section.Produce');
+                produceRecipes.forEach(function(recipe) {
+                    recipe.style.display = 'block';
+                });
+            } else if (category === 'main-dish') {
+                var mainDishRecipes = document.querySelectorAll('section.main-dish');
+                mainDishRecipes.forEach(function(recipe) {
+                    recipe.style.display = 'block';
+                });
+            }
+        }
+    </script>
 </body>
+
 </html>
