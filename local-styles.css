@@ -48,7 +48,10 @@ header h1 img {
 {
     display: inline-block;
     width: 100%;
-    /* padding: 20px; */
-    /* margin: 30px; */
-    /* text-align: center; */
+}
+
+.container
+{
+    padding: revert;
+    margin: revert;
 }
