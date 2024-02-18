@@ -43,3 +43,12 @@ header h1 img {
 .search-container {
     padding-bottom: 20px;
 }
+
+.map
+{
+    display: inline-block;
+    width: 100%;
+    /* padding: 20px; */
+    /* margin: 30px; */
+    /* text-align: center; */
+}
