@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional CSS for image boxes */
+        .image-box {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            font-family: Calibri, sans-serif;
+        }
+
+        .image-box img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Center the image */
+        }
+
+        .image-box h3 {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+
+        .image-box p {
+            margin-top: 10px;
+        }
+
+        /* Sticky footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0; /* Extend to the left */
+            right: 0; /* Extend to the right */
+            background-color: #ace18d;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px; /* Adjust spacing between icons */
+        }
+
+        footer a:hover {
+            color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">Market Fresh</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Recipes</h1>
+    </header>
+
+    <form action="/search" method="GET">
+        <input type="text" id="searchInput" name="query" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+
+    <main>
+        <section>
+            <div class="image-box">
+                <img src="/Images/Salad.png" alt="Image description">
+                <h3>Tropi-Cobb Salad</h3>
+                <p>Delicious and hearty salad filled with nutrient dense vegetables.</p>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section>
+            <div class="image-box">
+                <img src="/Images/Sandwich.png" alt="Image description">
+                <h3>Egg Lettuce Tomato Sandwich</h3>
+                <p>Crunchy and fresh sandwich perfect for a picnic.</p>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section>
+            <div class="image-box">
+                <img src="/Images/Soup.png" alt="Image description">
+                <h3>Elote-Style Corn Soup</h3>
+                <p>Filling and flavorful soup, perfect for a light meal.</p>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section>
+            <div class="image-box">
+                <img src="/Images/Apple.png" alt="Image description">
+                <h3>Apple Crumble</h3>
+                <p>Delightful dessert featuring tender, cinnamon-spiced apples nestled beneath a golden, buttery crumb topping.</p>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section>
+            <div class="image-box">
+                <img src="/Images/cobbler.png" alt="Image description">
+                <h3>Peach Cobbler</h3>
+                <p>Tasty dessert that pairs well with milk.</p>
+            </div>
+        </section>
+    </main>
+    <main>
+        <section>
+            <div class="image-box">
+                <img src="/Images/Coconut Bowl.png" alt="Image description">
+                <h3>Coconut Bowl</h3>
+                <p>Warm meal that is rich is flavours.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="#"><img src="/Images/home.png" alt="home"></a>
+        <a href="#"><img src="/Images/book.png" alt="Icon 2"></a>
+        <a href="#"><img src="/Images/heart.png" alt="Icon 3"></a>
+        <a href="#"><img src="Images/location.png" alt="Icon 4"></a>
+    </footer>
+
+    <script src="App.js"></script>
+</body>
+
+</html>
