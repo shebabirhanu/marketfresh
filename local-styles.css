@@ -1,8 +1,10 @@
-header h1 {
-    color: #CBF265;
+nav {
+    color: rgb(9, 112, 0);
     text-align: center; 
     font-size: 20px;
-    padding: 20px 0; /* Added padding to adjust the height */
+    width: 100%;
+    border-bottom-left-radius: 10px; 
+    border-top-right-radius: 10px; 
 }
 
 main {
@@ -54,4 +56,17 @@ header h1 img {
 {
     padding: revert;
     margin: revert;
+}
+
+.navbar-brand {
+    color: rgb(9, 112, 0);
+}
+
+.navbar {
+    background-color: #fcfcfc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.local-container {
+    padding-top: 20px;
 }
